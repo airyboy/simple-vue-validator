@@ -1,7 +1,6 @@
 'use strict';
 
 var _ = require('lodash/core');
-var Promise = require('bluebird');
 
 function ValidationBag() {
   this.resetCounter = 0;

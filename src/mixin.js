@@ -3,7 +3,6 @@
 var _ = require('lodash/core');
 var omit = require('lodash/omit');
 var debounce = require('lodash/debounce');
-var Promise = require('bluebird');
 var ValidationBag = require('./validation-bag');
 
 var mixin = {
