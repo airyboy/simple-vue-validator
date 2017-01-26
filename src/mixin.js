@@ -107,7 +107,6 @@ var mixin = {
           .all(validateMethods.map(function (validateMethod) {
             return validateMethod();
           }))
-          .bind(this)
           .then(function (results) {
             return results.filter(function (result) {
                 return !!result;

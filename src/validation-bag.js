@@ -198,7 +198,6 @@ ValidationBag.prototype.setError = function (field, message) {
     var validatingId = this.setValidating(field);
     //console.log(validatingId + ' | ' + 'start');
     return Promise.all(messages)
-      .bind(this)
       .then(function (messages) {
         // check if the validating id is is still valid
         if (this.isValidating(field, validatingId)) {
